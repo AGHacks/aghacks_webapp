@@ -1,0 +1,10 @@
+/* background color: #f2f2f2; */
+/* red-ish background: #d76b68; */
+/* grey-ish header bkgd: #e4e4e4; */
+
+html, body {background-color: #f2f2f2;}
+
+#top-logo {width: 100%; height: 500px;
+    background: #f2f2f2 url(../img/logo.png) no-repeat center center;
+    border-bottom: 2px solid #d76b68;}
+#top-logo h1 {padding-top: 350px; text-align: center; font-weight: 100;}
