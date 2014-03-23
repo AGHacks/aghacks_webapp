@@ -1,9 +1,11 @@
-/* 75% scale */
+/* ---------------------------------- */
+/* HTML TAGS                          */
+/* ---------------------------------- */
 
 html, body {
-  background-color: #F2F2F2;
   font-family: 'Raleway';
   font-weight: 300;
+  color: #888888;
 }
 
 ul, li, h1, h2, h3 {
@@ -11,22 +13,69 @@ ul, li, h1, h2, h3 {
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-weight: 500;
-}
+/* ---------------------------------- */
+/* HEADER                             */
+/* ---------------------------------- */
 
-#logo {
-  height: 475px;
-  background: url('../img/logo.png') no-repeat center;
-  border-bottom: 2px solid #db6766;
-}
-
-#logo h1 {
-  padding-top: 295px;
+header {
+  background: url('../img/bg.png') gray center no-repeat;
+  height: 775px;
+  margin: 0 auto;
+  padding-top: 200px;
   text-align: center;
-  font-size: 60px;
-  font-weight: 300;
 }
+
+  .overline:before,
+  .overline:after {
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    content: '';
+    background-color: #FFF;
+  }
+
+  .overline:before {
+    margin-left: -50%;
+  }
+
+  .overline:after {
+    margin-right: -50%;
+  }
+
+  #logo:before {
+    right: 30px;
+  }
+
+    #logo > img {
+      vertical-align: -35px;
+    }
+
+  header > h1 {
+    color: #FFF;
+    font-size: 230px;
+    font-weight: 200;
+  }
+
+  header > h2 {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 10px;
+  }
+
+  header > h2:before {
+    right: 90px;
+  }
+
+  header > h2:after {
+    left: 90px;
+  }
+
+/* ---------------------------------- */
+/* NAVBAR                             */
+/* ---------------------------------- */
 
 #navbar {
   height: 60px;
@@ -35,39 +84,16 @@ h1, h2, h3 {
 }
 
 #navbar h3 {
-  font-weight: 300;  
+  color: #401a1a;
+  font-weight: 300;
   padding-top: 15px;
 }
-
-#navbar-icons {
-  padding-top: 15px;
-  font-size: 23px;
-  color: #dddddd;
-  text-align: center;
-  letter-spacing: 10px;
-}
-
-#navbar-icons ul {
-  list-style-type: none;
-}
-
-#navbar-icons ul li {
-  display: inline;
-}
-
-#navbar-icons ul li a {
-  color: #CCC;
-}
-
-#navbar-icons ul li a:hover {
-  color: #BBB;
-}
-
 
 #navbar-register button {
   height: 42px;
   background: #e5e5e5;
   border: 0;
+  color: #401a1a;
   font-weight: 500;
   font-size: 20px;
   margin-top: 8px;
@@ -77,7 +103,7 @@ h1, h2, h3 {
 
 #box {
   height: 320px;
-  background: #db6766;
+  background: #a71e2b;
   color: #FFF;
 }
 
@@ -110,7 +136,7 @@ h1, h2, h3 {
 
 #box-buttons button {
   display: block;
-  width: 265px;  
+  width: 265px;
   height: 70px;
   background: #b8b8b8;
   color: #e6e6e6;
