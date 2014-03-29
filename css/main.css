@@ -21,7 +21,7 @@ header {
   background: url('../img/bg.png') gray center no-repeat;
   height: 775px;
   margin: 0 auto;
-  padding-top: 200px;
+  padding-top: 140px;
   text-align: center;
 }
 
@@ -77,25 +77,46 @@ header {
 /* NAVBAR                             */
 /* ---------------------------------- */
 
+.register {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: rgb( 64, 26, 26 );
+  line-height: 1;
+  text-align: center;
+  -moz-transform: matrix( 0.90954087289811,0,0,0.92764126373004,0,0);
+  -webkit-transform: matrix( 0.90954087289811,0,0,0.92764126373004,0,0);
+  -ms-transform: matrix( 0.90954087289811,0,0,0.92764126373004,0,0);
+  position: absolute;
+  left: 1443.376px;
+  top: 815.325px;
+  z-index: 83;
+}
+
+
 #navbar {
   height: 60px;
   background: #FFF;
-  border: 1px solid #fff;
+  border-top: 1px solid #960026;
+  position: relative;
+  top: -55px;
+  z-index: 999;
 }
 
 #navbar h3 {
-  color: #401a1a;
+  color: rgb( 64, 26, 26 );;
   font-weight: 300;
   padding-top: 15px;
+  font-size: 30px;
+  font-family: "Raleway";
 }
 
 #navbar-register button {
   height: 42px;
   background: #e5e5e5;
   border: 0;
-  color: #401a1a;
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: "Raleway";
+  color: rgb( 64, 26, 26 );
   margin-top: 8px;
   padding: 0 40px 0;
   float: right;
