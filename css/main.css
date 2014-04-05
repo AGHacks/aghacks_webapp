@@ -1,3 +1,9 @@
+@font-face
+{
+  font-family: Raleway;
+  src: url('../fonts/Raleway-ExtraLight.otf');
+}
+
 /* ---------------------------------- */
 /* HTML TAGS                          */
 /* ---------------------------------- */
@@ -18,11 +24,11 @@ ul, li, h1, h2, h3 {
 /* ---------------------------------- */
 
 header {
-  background: url('../img/bg.png') gray center no-repeat;
   height: 775px;
   margin: 0 auto;
   padding-top: 140px;
   text-align: center;
+  overflow: hidden;
 }
 
   .overline:before,
@@ -77,28 +83,13 @@ header {
 /* NAVBAR                             */
 /* ---------------------------------- */
 
-.register {
-  font-size: 30px;
-  font-family: "Raleway";
-  color: rgb( 64, 26, 26 );
-  line-height: 1;
-  text-align: center;
-  -moz-transform: matrix( 0.90954087289811,0,0,0.92764126373004,0,0);
-  -webkit-transform: matrix( 0.90954087289811,0,0,0.92764126373004,0,0);
-  -ms-transform: matrix( 0.90954087289811,0,0,0.92764126373004,0,0);
-  position: absolute;
-  left: 1443.376px;
-  top: 815.325px;
-  z-index: 83;
-}
-
-
 #navbar {
   height: 60px;
+  width: 100%;
   background: #FFF;
   border-top: 1px solid #960026;
-  position: relative;
-  top: -55px;
+  position: absolute;
+  bottom: 0;
   z-index: 999;
 }
 
@@ -172,7 +163,8 @@ header {
 }
 
 #tiles {
-  margin: 50px 0;
+  padding-top: 100px;
+  background-color: rgba(229, 229, 229, 0.6);
 }
 
 .tile {
@@ -194,10 +186,19 @@ header {
   font-size: 25px;
   color: #888888;
   text-align: center;
+  vertical-align: middle;
+}
+
+.tile-footer {
+  width: 100%;
+  text-align: center;
+  padding: 18px 0;
+  background: rgb( 167, 30, 43 );
+  color: #fff;
 }
 
 .tile-red {
-  background: #d85857;
+  background-color: rgb( 167, 30, 43 );
 }
 
 #tile-calendar {
@@ -211,4 +212,68 @@ header {
 
 #col-gallery {
   margin-top: 28px;
+}
+
+#video_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  /*-webkit-filter: blur(8px) grayscale (.5) opacity(0.8) hue-rotate(120deg);*/
+  /*filter: blur(8px) grayscale (.5) opacity(0.8) hue-rotate(120deg);*/
+  /*filter: sepia(70%) brightness(50%) contrast(150%) saturate(700%);
+  -webkit-filter: sepia(70%) brightness(50%) contrast(150%) saturate(700%); 
+  -moz-filter: sepia(70%) brightness(50%) contrast(150%) saturate(700%);
+  -ms-filter: sepia(70%) brightness(50%) contrast(150%) saturate(700%);
+  -o-filter: sepia(70%) brightness(50%) contrast(150%) saturate(700%);*/
+  /*-webkit-filter(1);*/
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -200;
+  /*background-color: rgba(214, 189, 82, 0.5);*/
+  background: url('../img/dot.png');
+}
+
+#tiles .row {
+  margin-bottom: 100px !important;
+}
+
+#first-info {
+  width: 100%;
+  height: 120px;
+  color: #fff;
+  background-color: rgb( 167, 30, 43 );
+}
+
+#first-info h3 {
+  padding-top: 50px;
+}
+
+#first-info .register {
+  border: 2px solid #fff;
+  font-size: 32px;
+  color: #fff;
+  background-color: rgb( 167, 30, 43 );
+  float: right;
+  margin-top: 34px;
+  padding: 3px 55px;
+}
+
+#map {
+  height: 100%;
+}
+
+#map .tile-content {
+  padding: 0;
 }
