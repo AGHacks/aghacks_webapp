@@ -210,6 +210,31 @@ header {
   vertical-align: middle;
 }
 
+.tile-faq {
+  display: inline-block;
+  height: 1000px;
+}
+
+.tile-faq .tile-content div {
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: justify;
+}
+
+.question {
+  color: #000000;
+  display: block;
+}
+
+.answer {
+  font-size: 18px;
+}
+
+.faq-row {
+  display: block;
+  width: 1140px;
+}
+
 #col-gallery {
   margin-top: 28px;
 }
