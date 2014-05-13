@@ -227,7 +227,10 @@ header {
 }
 
 .answer {
+  display: block;
+  padding-top: 20px;
   font-size: 18px;
+  color: #3C3C3C;
 }
 
 .faq-row {
