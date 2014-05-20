@@ -1,242 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>AGHacks &middot; The Most Epic Hackaton</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>AGHacks &middot; The Most Epic Hackaton</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Raleway font -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,500' rel='stylesheet' type='text/css'> -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="overlay"></div>
-    <!-- <div class="blur"></div> -->
-    <video id="video_background" preload="auto" autoplay="true" loop muted="" volume="0">
-      <source src="videos/140326 AGHacks RC1 HD.webmsd.webm" type="video/webm">
-      <source src="videos/140326 AGHacks RC1 HD.appleuniversal.mp4" type="video/mp4">
-    </video>
+</head>
+<body>
+  <div id="navbar-fixed" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">AGHacks</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Facebook</a></li>
+          <li><a href="#">Sponsorzy</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Dojazd</a></li>
+          <li>
+            <a class="register-button" href="#">
+              <span class="register-button-inner">REJESTRACJA</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    <header>
-      <span id="logo" class="overline"><img src="img/logo.png"></span>
-      <h1>AGHacks</h1>
-      <h2 class="overline">the most epic hackathon ever</h2>
-    </header>
+  <header id="welcome">
+    <span class="overline" id="logo"><img src="images/logo.png"></span>
+    <h1>AGHacks</h1>
+    <h2 class="overline">Największy w Polsce Studencki Hackathon</h2>
+  </header>
 
-    <div id="navbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>AGHacks</h3>
-          </div>
-          <div id="navbar-register" class="col-lg-6">
-            <button>register</button>
-          </div>
-        </div>
+  <div id="tiles" class="container">
+
+    <div class="row">
+      <div class="col-lg-9 tile tile-info">
+        200 STUDENTÓW Z CAŁEJ POLSKI
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2 tile tile-icon">
+        <i class="fa fa-male fa-5x"></i>
       </div>
     </div>
 
-    <div id="first-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <h3>THE MOST EPIC HACKATHON 22-23/10/2014 - KRAKÓW - AGH</h3>
-          </div>
-          <div class="col-lg-4">
-            <input type="submit" class="register" value="register">
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-lg-2 tile tile-icon">
+        <i class="fa fa-clock-o fa-5x"></i>
       </div>
-        </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-9 tile tile-info tile-biggest-info">
+        48 GODZIN
       </div>
     </div>
 
-    <div id="tiles">
-      <div class="container">
-        <div class="row">
-            <div class="col-xs-7">
-              <div class="tile">
-                <div class="tile-header">
-                  <h2>WHEN</h2>
-                </div>
-                <div class="tile-content">
-                  październik 2014<br />
-                  lorem ipsum dolor sit<br />
-                  amet nanana<br />
-                  nanananaannannana
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-5">
-              <div id="tile-calendar" class="tile tile-red">
-                <img src="img/calendar.png" alt="calendar">
-              </div>
-            </div>
-
-<!--             <div id="col-gallery" class="col-xs-12">
-              <div id="gallery" class="carousel slide" data-ride="carousel">
-                Indicators
-                <ol class="carousel-indicators">
-                  <li data-target="#gallery" data-slide-to="0" class="active"></li>
-                  <li data-target="#gallery" data-slide-to="1"></li>
-                  <li data-target="#gallery" data-slide-to="2"></li>
-                </ol>
-
-                Wrapper for slides
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="gallery/1.png" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="gallery/2.png" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="gallery/3.png" alt="...">
-                  </div>
-                </div>
-              </div>
-            </div>
- -->        
-        </div>
-
-        <div class="row">
-          <div class="col-xs-5">
-            <div id="tile-calendar" class="tile tile-red">
-              <img src="img/people.png" alt="calendar">
-            </div>
-          </div>
-          <div class="col-xs-7">
-            <div class="tile">
-              <div class="tile-header">
-                <h2>WHO</h2>
-              </div>
-              <div class="tile-content">
-                </br>
-                400 hackers/hipsters/hustlers</br>
-                divided into teams of max 4 pople
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="tile" id="map">
-              <div class="tile-header">
-                  <h2>WHERE</h2>
-              </div>
-              <div class="tile-content">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9743799621874!2d19.9125555!3d50.06804144999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba4c2a49e97%3A0xc4bef8eb0fcc3739!2sD-17!5e0!3m2!1spl!2spl!4v1396485974657" width="1140" height="500" frameborder="0" style="border:0"></iframe>
-              </div>
-              <div class="tile-footer">
-                  <h2>EUROPE -> POLAND -> KRAKÓW -> KAWIORY -> D17</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="tile tile-faq">
-              <div class="tile-header">
-                  <h2>F.A.Q.</h2>
-              </div>
-              <div class="tile-content">
-                <div class="faq-row">
-                  <div class="col-xs-6">
-                    <span class="question">Co to jest hackathon?</span>
-                    <span class="answer">
-  Hackathon to wydarzenie, na którym jedyne co Cię ogranicza to Twoja kreatywność. Na hackathonie programiści i graficy łączą swoje siły, aby stworzyć coś niesamowitego. To nieustanna zabawa, praca nad własnymi szalonymi pomysłami z dużą ilością pizzy, kawy i minimalnej dawki snu.
-                    </span>
-                  </div>
-                  <div class="col-xs-6">
-                    <span class="question">Kto może przyjść?</span>
-                    <span class="answer">
-  Studenci i licealiści, programiści, graficy i muzycy - jedyny warunek to duża ilość energii :)
-                    </span>
-                  </div>
-                </div>
-
-                <div class="faq-row">
-                  <div class="col-xs-6">
-                  <span class="question">Co muszę umieć?</span>
-                  <span class="answer">
-  Nie ważne czy jesteś profesjonalnym programistą czy grafikiem, czy też nie umiesz nic i chcesz rozpocząć swoją przygodę ze światem technologii. Hackathon to idealne miejsce, aby nauczyć się nowych rzeczy!
-                  </span>
-                  </div>
-                  <div class="col-xs-6">
-                    <span class="question">Co muszę przynieść?</span>
-                    <span class="answer">
-  Wszystko, czego będziesz potrzebować, aby pracować nad swoim pomysłem (laptop itp). 
-                    </span>
-                  </div>
-                </div>
-
-                <div class="faq-row">
-                  <div class="col-xs-6">
-                    <span class="question">Czy muszę się zarejestrować?</span>
-                    <span class="answer">
-  Tak, rejestracja jest obowiązkowa.
-                    </span>
-                  </div>
-                  <div class="col-xs-6">
-                    <span class="question">Czy muszę być studentem AGH?</span>
-                    <span class="answer">
-  Nie! AGHacks jest wydarzeniem skierowanym do studentów z całej Polski!
-                    </span>
-                  </div>
-                </div>
-
-                <div class="faq-row">
-                  <div class="col-xs-6">
-                    <span class="question">48h to dwa dni! Co ze spaniem?</span>
-                    <span class="answer">
-  Jeśli po wypiciu litrów kawy i redbulli znajdziesz siłę na sen, w budynku będzie zapewnione miejsce do krótkiego wypoczynku.
-                    </span>
-                  </div>
-                  <div class="col-xs-6">
-                    <span class="question">Czy muszę przyjść z zespołem?</span>
-                    <span class="answer">
-  Nie. Zespoły będą formowały się również podczas wydarzenia. 
-                    </span>
-                  </div>
-                </div>
-
-                <div class="faq-row">
-                  <div class="col-xs-6">
-                    <span class="question"></span>
-                    <span class="answer">
-                    </span>
-                  </div>
-                  <div class="col-xs-6">
-                    <span class="question"></span>
-                    <span class="answer">
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-lg-9 tile tile-info">
+        10k PLN W NAGRODACH
       </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2 tile tile-icon">
+        <i class="fa fa-trophy fa-5x"></i>
       </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky-kit.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    <div class="row">
+      <div class="col-lg-2 tile tile-icon">
+        <i class="fa fa-calendar fa-5x"></i>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-9 tile tile-info tile-bigger-info">
+        24-28 PAŹDZIERNIKA
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9 tile tile-info">
+        DARMOWE JEDZENIE &amp; PRZEKĄSKI
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2 tile tile-icon">
+        <i class="fa fa-coffee fa-5x"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="hackathon" class="info-box">
+    <div class="container">
+      <p>
+        <span class="black">Hackaton</span> to wydarzenie, na którym jedyne co Cię ogranicza to Twoja kreatywność.
+      </p>
+      <p>
+        Na hackathonie programiści i graficy łączą swoje siły, aby stworzyć coś niesamowitego. To nieustanna zabawa, praca nad własnymi szalonymi pomysłami z dużą ilością pizzy, kawy i minimalnej dawki snu.
+      </p>
+    </div>
+  </div>
+
+  <div id="sponsors" class="info-box entitled">
+    <h1>SPONSORZY</h1>
+
+    <div class="container">
+      <div class="row sponsors-list">
+        <div class="col-lg-6 sponsor">katedra infy</div>
+        <div class="col-lg-6 sponsor">github</div>
+      </div>
+    </div>
+
+    <div class="your-logo-here">
+      would you like to find your company logo here?
+    </div>
+  </div>
+
+  <div id="faq" class="info-box entitled">
+    <h1>F.A.Q.</h1>
+
+    <div class="container">
+      <div class="row faq-row">
+        <div class="col-lg-6 question-box">
+          <div class="question">KTO MOŻE PRZYJŚĆ?</div>
+          <div class="answer">Studentki i licealistki, programiści, graficy i muzycy - jedyny warunek to duża ilość energii :)</div>
+        </div>
+        <div class="col-lg-6 question-box">
+          <div class="question">CZY MUSZĘ BYĆ STUDENTEM AGH?</div>
+          <div class="answer">Nie! AGHacks jest wydarzeniem skierowanym do studentów z całej Polski!</div>
+        </div>
+      </div>
+      <div class="row faq-row">
+        <div class="col-lg-6 question-box">
+          <div class="question">CO MUSZĘ UMIEĆ?</div>
+          <div class="answer">Nie ważne czy jesteś profesjonalym programistą czy grafikiem, czy też nie umiesz nic i chcesz rozpocząć swoją przygodę ze światem technologii. Hackathon to idealne miejsce, aby nauczyć się nowych rzeczy!</div>
+        </div>
+        <div class="col-lg-6 question-box">
+          <div class="question">48H TO DWA DNI! CO ZE SPANIEM?</div>
+          <div class="answer">Jeśli po wypiciu litrów kawy i redbulli znajdziesz siłę na sen, w budynku będzie zapewnione miejsce do krótkiego wypoczynku.</div>
+        </div>
+      </div>
+      <div class="row faq-row">
+        <div class="col-lg-6 question-box">
+          <div class="question">CZY MUSZĘ SIĘ ZAREJESTROWAĆ?</div>
+          <div class="answer">Tak, rejestracja jest obowiązkowa.</div>
+        </div>
+        <div class="col-lg-6 question-box">
+          <div class="question">CZY MUSZĘ PRZYJŚĆ Z ZESPOŁEM?</div>
+          <div class="answer">Nie. Zespoły będą formowały się również podczas wydarzenia.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map">
+    <h1>Polska &gt; Kraków &gt; AGH &gt; D17</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9743799621874!2d19.9125555!3d50.06804144999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba4c2a49e97%3A0xc4bef8eb0fcc3739!2sD-17!5e0!3m2!1spl!2spl!4v1396485974657" frameborder="0" style="border:0"></iframe>
+  </div>
+
+  <video id="background-video" preload="auto" autoplay="true" loop muted="" volume="0">
+    <source src="videos/aghvid.webm" type="video/webm">
+    <source src="videos/aghvid.mp4" type="video/mp4">
+  </video>
+
+  <div id="video-overlay"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
