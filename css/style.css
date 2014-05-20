@@ -223,6 +223,12 @@ body {
 
 .sponsors-list {
   padding: 120px 0 120px;
+
+  img {
+    height:auto;
+    width:auto;
+    max-height: 100px;
+  }
 }
 
 .sponsor {
