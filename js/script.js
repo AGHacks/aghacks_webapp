@@ -20,6 +20,14 @@ function navbarHandler() {
 $(document).ready(function() {
   centerWelcomeBox();
   navbarHandler();
+
   $(window).resize(centerWelcomeBox);
   $(window).scroll(navbarHandler);
+
+  $('body').scrollspy({ target: '#navbar-fixed', offset: 65 });
+
+  $(".scroll-to").on('click', function() {
+    window.scrollTo(0, $($(this).attr("href")).offset().top - 61);
+    return false;
+  });
 });

@@ -141,20 +141,68 @@ body {
 }
 
 #welcome h1 {
-  font-size: 230px;
+  font-size: 80px;
 }
 
 #welcome h2 {
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 #welcome h2:before {
-  right: 90px;
+  right: 40px;
+  top: 10px;
 }
 
 #welcome h2:after {
-  left: 90px;
+  left: 40px;
+  top: -10px;
+}
+
+.responsive-br {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .responsive-br {
+    display: none;
+  }
+
+  #welcome h2:before {
+    right: 90px;
+  }
+
+  #welcome h2:after {
+    left: 90px;
+  }
+
+  #welcome h1 {
+    font-size: 150px;
+  }
+
+  #welcome h2 {
+    font-size: 25px;
+  }
+
+  #welcome h2:before {
+    right: 40px;
+    top: 0;
+  }
+
+  #welcome h2:after {
+    left: 40px;
+    top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #welcome h1 {
+    font-size: 230px;
+  }
+
+  #welcome h2 {
+    font-size: 30px;
+  }
 }
 
 #tiles {
