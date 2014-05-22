@@ -252,6 +252,7 @@ body {
   background: white;
   font-size: 24px;
   font-weight: bold;
+  text-align: justify;
 }
 
 .entitled {
@@ -329,4 +330,8 @@ body {
   height: 100%;
   margin-top: -10px;
   margin-bottom: -5px;
+}
+
+.container {
+  width: 1000px;
 }
