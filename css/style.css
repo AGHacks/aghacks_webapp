@@ -63,6 +63,22 @@ body {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
+
+    .tile-info {
+      font-size: 35px !important;
+    }
+
+    .tile-bigger-info {
+      font-size: 35px !important;
+    }
+
+    .tile-biggest-info {
+      font-size: 35px !important;
+    }
+
+    .text-container {
+      text-align: left!important;
+    }
 }
 
 .navbar-brand,
@@ -194,6 +210,18 @@ body {
     left: 40px;
     top: 0;
   }
+
+  .tile-info {
+    font-size: 35px;
+  }
+
+  .tile-bigger-info {
+    font-size: 55px;
+  }
+
+  .tile-biggest-info {
+    font-size: 70px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -204,11 +232,23 @@ body {
   #welcome h2 {
     font-size: 30px;
   }
+
+  .tile-info {
+    font-size: 35px;
+  }
+
+  .tile-bigger-info {
+    font-size: 55px;
+  }
+
+  .tile-biggest-info {
+    font-size: 70px;
+  }
 }
 
 #tiles {
   margin-top: 160px;
-  width: 1000px;
+  /*width: 1000px;*/
   color: black;
 }
 
@@ -217,21 +257,34 @@ body {
 }
 
 .tile {
-  height: 165px;
+  min-height: 165px;
+  padding: 0;
 }
 
-.tile-info {
+.tile-info-wrapper {
+  display: table;
+  text-align: center;
   background-color: white;
   font-family: Arvo;
   font-size: 35px;
   text-align: center;
-  line-height: 165px;
+  padding: 0 15px;
+  min-height: 165px;
+  height: 100%;
+  width: 100%;
+}
+
+.tile-info {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .tile-icon {
   background-color: #9b000f;
   color: white;
   padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 }
 
@@ -287,6 +340,14 @@ body {
   font-size: 45px;
 }
 
+.sponsor-img {
+  max-width:100% !important;
+  width:100% !important;
+  height:auto;
+  display:block;
+  margin: 10px 0;
+}
+
 .your-logo-here {
   position: absolute;
   bottom: 15px;
@@ -339,6 +400,6 @@ body {
   margin-bottom: -5px;
 }
 
-.text-container {
-  width: 1000px;
+.text-container p {
+  padding: 0 15px;
 }

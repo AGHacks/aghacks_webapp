@@ -7,13 +7,17 @@ function centerWelcomeBox() {
 function navbarHandler() {
   var position = $(window).scrollTop();
   var navbar = $("#navbar-fixed");
-  if(position <= 0) {
-    navbar.toggle();
-  }
-  else {
-    if(!navbar.is(":visible")) {
+  if ($(document).width() > 769) {
+    if (position <= 0) {
       navbar.toggle();
     }
+    else {
+      if(!navbar.is(":visible")) {
+        navbar.toggle();
+      }
+    }
+  } else if(!navbar.is(":visible")) {
+    navbar.toggle();
   }
 }
 

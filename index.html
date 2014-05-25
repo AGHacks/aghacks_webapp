@@ -56,8 +56,12 @@
   <div id="tiles" class="container">
 
     <div class="row">
-      <div class="col-lg-9 tile tile-info">
-        200 STUDENTÓW Z CAŁEJ POLSKI
+      <div class="col-lg-9 tile">
+        <div class="tile-info-wrapper">
+          <div class="tile-info">
+            200 STUDENTÓW Z CAŁEJ POLSKI
+          </div>
+        </div>
       </div>
       <div class="col-lg-1"></div>
       <div class="col-lg-2 tile tile-icon">
@@ -70,14 +74,22 @@
         <i class="fa fa-clock-o fa-5x"></i>
       </div>
       <div class="col-lg-1"></div>
-      <div class="col-lg-9 tile tile-info tile-biggest-info">
-        48 GODZIN
+      <div class="col-lg-9 tile tile-biggest-info">
+        <div class="tile-info-wrapper">
+          <div class="tile-info">
+            48 GODZIN
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-lg-9 tile tile-info">
-        10k PLN W NAGRODACH
+      <div class="col-lg-9 tile">
+      <div class="tile-info-wrapper">
+          <div class="tile-info">
+            10k PLN W NAGRODACH
+          </div>
+        </div>
       </div>
       <div class="col-lg-1"></div>
       <div class="col-lg-2 tile tile-icon">
@@ -90,14 +102,22 @@
         <i class="fa fa-calendar fa-5x"></i>
       </div>
       <div class="col-lg-1"></div>
-      <div class="col-lg-9 tile tile-info tile-bigger-info">
-        24-28 PAŹDZIERNIKA
+      <div class="col-lg-9 tile tile-bigger-info">
+        <div class="tile-info-wrapper">
+          <div class="tile-info">
+            24-28 PAŹDZIERNIKA
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-lg-9 tile tile-info">
-        DARMOWE JEDZENIE &amp; PRZEKĄSKI
+      <div class="col-lg-9 tile">
+        <div class="tile-info-wrapper">
+          <div class="tile-info">
+            DARMOWE JEDZENIE &amp; PRZEKĄSKI
+          </div>
+        </div>
       </div>
       <div class="col-lg-1"></div>
       <div class="col-lg-2 tile tile-icon">
@@ -109,18 +129,20 @@
 
   <div id="hackathon" class="info-box">
     <div class="container text-container">
-      <p>
-        <span class="black">Hackaton</span> to wydarzenie, na którym jedyne co Cię ogranicza to Twoja kreatywność.
-      </p>
-      <p>
-        Na hackathonie programiści i graficy łączą swoje siły, aby stworzyć coś niesamowitego. To nieustanna zabawa, praca nad własnymi szalonymi pomysłami z dużą ilością pizzy, kawy i minimalnej dawki snu.
-      </p>
-      <p>
-        </br>
-        <span class="black">AGHacks</span> to największy studencki hackathon w Polsce organizowany przez lidera wśród uczelni technicznych w Polsce - AGH. To wydarzenie, na którym poznasz niezwykłych ludzi, nauczysz się eksperymentować i poznasz ludzi z wiodących firm technologicznych.
+      <div class="row">
+        <p>
+          <span class="black">Hackaton</span> to wydarzenie, na którym jedyne co Cię ogranicza to Twoja kreatywność.
+        </p>
+        <p>
+          Na hackathonie programiści i graficy łączą swoje siły, aby stworzyć coś niesamowitego. To nieustanna zabawa, praca nad własnymi szalonymi pomysłami z dużą ilością pizzy, kawy i minimalnej dawki snu.
+        </p>
+        <p>
+          </br>
+          <span class="black">AGHacks</span> to największy studencki hackathon w Polsce organizowany przez lidera wśród uczelni technicznych w Polsce - AGH. To wydarzenie, na którym poznasz niezwykłych ludzi, nauczysz się eksperymentować i poznasz ludzi z wiodących firm technologicznych.
 
-        Jeżeli kiedykolwiek miałeś marzenie, aby zbudować własną aplikację mobilną, stronę internetową czy robota - nie możesz przegapić AGHacks.
-      </p>
+          Jeżeli kiedykolwiek miałeś marzenie, aby zbudować własną aplikację mobilną, stronę internetową czy robota - nie możesz przegapić AGHacks.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -133,7 +155,7 @@
           <div class="col-lg-4 sponsor"><img src="images/logos/agh.jpg"></div>
         </a>
         <div class="col-lg-4 sponsor"><img src="images/logos/github.png" style="margin-top:40px;"></div>
-        <div class="col-lg-4 sponsor"><img src="images/logos/estimote.png"></div>
+        <div class="col-lg-4 sponsor"><img class="sponsor-img" src="images/logos/estimote.png"></div>
       </div>
     </div>
 
@@ -182,11 +204,12 @@
   </div>
 
   <div id="map">
-    <h1>Polska &gt; Kraków &gt; AGH &gt; D17</h1>
+    <h1 class="visible-md visible-lg hidden-sm hidden-xs">Polska &gt; Kraków &gt; AGH &gt; D17</h1>
+    <h1 class="hidden-md hidden-lg visible-sm visible-xs">Lokalizacja</h1>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9743799621874!2d19.9125555!3d50.06804144999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba4c2a49e97%3A0xc4bef8eb0fcc3739!2sD-17!5e0!3m2!1spl!2spl!4v1396485974657" frameborder="0" style="border:0"></iframe>
   </div>
 
-  <video id="background-video" preload="auto" autoplay="true" loop muted="" volume="0">
+  <video class="visible-md visible-lg hidden-sm hidden-xs" id="background-video" preload="auto" autoplay="true" loop muted="" volume="0">
     <source src="videos/aghvid.webm" type="video/webm">
     <source src="videos/aghvid.mp4" type="video/mp4">
   </video>
