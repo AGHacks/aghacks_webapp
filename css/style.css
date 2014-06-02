@@ -403,3 +403,7 @@ body {
 .text-container p {
   padding: 0 15px;
 }
+
+.tile-video {
+  padding: 50px 20px 40px 20px;
+}
