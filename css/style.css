@@ -407,3 +407,7 @@ body {
 .tile-video {
   padding: 50px 20px 40px 20px;
 }
+
+.tile-video-red {
+  padding-bottom: 47px;
+}
