@@ -38,11 +38,20 @@
           <li><a class="scroll-to" href="#faq">FAQ</a></li>
           <li><a class="scroll-to" href="#map">Dojazd</a></li>
           <li>
-            <a class="register-button" href="#">
-              <span class="register-button-inner">REJESTRACJA WKRÓTCE</span>
+            <a class="register-button" data-toggle="modal" data-target="#register-modal">
+              <span class="register-button-inner">REJESTRACJA</span>
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body" id="ockrk-container"></div>
       </div>
     </div>
   </div>
@@ -128,27 +137,27 @@
     <div class="row">
       <div class="col-lg-5 tile tile-icon tile-video tile-video-red">
         <div class="visible-md visible-lg hidden-sm hidden-xs">
-          <iframe width="380" height="380" src="//www.youtube.com/embed/dF5TY-AmxBo?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>        
+          <iframe width="380" height="380" src="//www.youtube.com/embed/dF5TY-AmxBo?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="hidden-md hidden-lg visible-sm visible-xs">
-          <iframe width="320" height="320" src="//www.youtube.com/embed/dF5TY-AmxBo?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>        
+          <iframe width="320" height="320" src="//www.youtube.com/embed/dF5TY-AmxBo?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div class="col-lg-1"></div> 
+      <div class="col-lg-1"></div>
 
       <div class="col-lg-6 tile">
         <div class="tile-info-wrapper tile-video">
           <div class="tile-info">
             <div class="visible-md visible-lg hidden-sm hidden-xs">
-              <iframe width="380" height="380" src="//www.youtube.com/embed/sad58qlg5lk?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>        
+              <iframe width="380" height="380" src="//www.youtube.com/embed/sad58qlg5lk?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="hidden-md hidden-lg visible-sm visible-xs">
-              <iframe width="320" height="320" src="//www.youtube.com/embed/sad58qlg5lk?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>        
+              <iframe width="320" height="320" src="//www.youtube.com/embed/sad58qlg5lk?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
 
     <!-- <div class="row"> -->
@@ -211,7 +220,7 @@
           <a href="http://www.ki.agh.edu.pl/">
             <div class="col-lg-6 sponsor"><img class="sponsor-img" src="images/logos/informatyka.jpg"></div>
           </a>
-        
+
       </div>
 
       <div class="row sponsors-list">
@@ -280,5 +289,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script id="ockrk-widget">
+    (function(){
+    var script = document.createElement('script');
+    script.src = "http://ockrk.co/show.js?eventid=144";
+    script.async = true;
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+    })();
+  </script>
 </body>
 </html>
