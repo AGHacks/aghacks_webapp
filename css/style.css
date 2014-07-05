@@ -95,11 +95,15 @@ body {
 .register-button {
   font-size: 20px;
   font-weight: bold;
-  color: #969696 !important;
+  color: #9b000f !important;
+}
+
+.register-button:hover {
+  cursor: pointer;
 }
 
 .register-button-inner {
-  border: 2px solid #969696;
+  border: 2px solid  #9b000f !important;
   padding: 10px;
 }
 
