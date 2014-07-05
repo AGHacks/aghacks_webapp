@@ -9,7 +9,7 @@ function navbarHandler() {
   var navbar = $("#navbar-fixed");
   if ($(document).width() > 769) {
     if (position <= 0) {
-      navbar.toggle();
+      navbar.hide();
     }
     else {
       if(!navbar.is(":visible")) {
@@ -17,7 +17,7 @@ function navbarHandler() {
       }
     }
   } else if(!navbar.is(":visible")) {
-    navbar.toggle();
+    navbar.show();
   }
 }
 
