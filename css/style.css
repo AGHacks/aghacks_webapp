@@ -433,5 +433,12 @@ body {
   line-height: 24px;
   text-align: justify;
   font-weight: normal!important;
-  padding-right: 20px;
+}
+
+#mc_embed_signup form {
+  padding: 10px!important;
+}
+
+#mc-embedded-subscribe {
+  width: 37.5%!important;
 }
