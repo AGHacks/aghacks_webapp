@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+  
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,6 +52,23 @@
   <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
+        <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+
+            <form action="//aghacks.us3.list-manage.com/subscribe/post?u=6e05a5984f1b6c3aa312cbab3&amp;id=5010edde0b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <label for="mce-EMAIL">
+                <b>AGHacks</b> cieszy się ogromnym zainteresowaniem - już ponad 200 programistów i artystów zapisało się na AGHacks!
+                Niestety, nie możemy zaprosić na wydarzenie więcej osób. Ale nie martw się, nic straconego! <b>Zapisz się na listę rezerwową</b>. We wrześniu wyślemy Ci wiadomość jeśli tylko zwolnią się miejsca!
+              </label>
+
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="adres email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_6e05a5984f1b6c3aa312cbab3_5010edde0b" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Wyślij" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </form>
+          </div>
+
+        <!--End mc_embed_signup-->
         <div class="modal-body" id="ockrk-container">
           <span style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif; font-weight: bolder; padding-left: 20px;">
             Rejestrując się akceptujesz <a href="./RegulaminPDF.pdf">regulamin</a>
@@ -285,7 +303,7 @@
   <div id="map">
     <h1 class="visible-md visible-lg hidden-sm hidden-xs">Polska &gt; Kraków &gt; AGH &gt; D17</h1>
     <h1 class="hidden-md hidden-lg visible-sm visible-xs">Lokalizacja</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9743799621874!2d19.9125555!3d50.06804144999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba4c2a49e97%3A0xc4bef8eb0fcc3739!2sD-17!5e0!3m2!1spl!2spl!4v1396485974657" frameborder="0" style="border:0"></iframe>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9743799621874!2d19.9125555!3d50.06804144999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba4c2a49e97%3A0xc4bef8eb0fcc3739!2sD-17!5e0!3m2!1spl!2spl!4v1396485974657" frameborder="0" style="border:0"></iframe> -->
   </div>
 
   <video class="visible-md visible-lg hidden-sm hidden-xs" id="background-video" preload="auto" autoplay="true" loop muted="" volume="0">
@@ -298,14 +316,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-  <script id="ockrk-widget">
-    (function(){
-    var script = document.createElement('script');
-    script.src = "http://ockrk.co/show.js?eventid=151";
-    script.async = true;
-    var entry = document.getElementsByTagName('script')[0];
-    entry.parentNode.insertBefore(script, entry);
-    })();
-  </script>
 </body>
 </html>

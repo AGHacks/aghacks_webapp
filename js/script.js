@@ -33,5 +33,5 @@ $(document).ready(function() {
   $(".scroll-to").on('click', function() {
     window.scrollTo(0, $($(this).attr("href")).offset().top - 61);
     return false;
-  });
+  });  
 });
